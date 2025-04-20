@@ -3,7 +3,7 @@ import shutil
 import tkinter as tk
 from tkinter import filedialog, messagebox
 # Set paths for Roblox assets (adjust if your setup is different)
-roblox_assets_path = os.path.expanduser("/Applications/Roblox.app/Contents/Resources/Roblox/assets")
+roblox_assets_path = os.path.expanduser("/Applications/Roblox.app/Contents/Resources/content/")
 backup_folder = os.path.join(os.getcwd(), 'backups')
 
 # Ensure backups directory exists
