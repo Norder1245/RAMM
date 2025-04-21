@@ -1,5 +1,8 @@
-# Update 1.1
-# Script finally working
+# Update 1.2
+if $1 == "-p" or $1 == "--pull"
+    git pull
+    echo "Updated RAMM Installer"
+end
 curl -FsSL https://raw.githubusercontent.com/Norder1245/RAMM/refs/heads/main/RAMM.py > /usr/local/opt/ramm/RAMM.py
 echo "alias ramm='python3 /usr/local/opt/ramm/RAMM.py'" >> ~/.bashrc
 echo "alias ramm='python3 /usr/local/opt/ramm/RAMM.py'" >> ~/.zshrc
