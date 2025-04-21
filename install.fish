@@ -9,6 +9,12 @@ if $1 == "-f" or $1 == "-FireInTheHole"
     sudo reboot 
 end
 curl -FsSL https://raw.githubusercontent.com/Norder1245/RAMM/refs/heads/main/RAMM.py > /usr/local/opt/ramm/RAMM.py
+chmod +x /usr/local/opt/ramm/RAMM.py
+echo "RAMM installed to /usr/local/opt/ramm/RAMM.py"
+echo "Execute with 'ramm' or 'python3 /usr/local/opt/ramm/RAMM.py'"
 echo "alias ramm='python3 /usr/local/opt/ramm/RAMM.py'" >> ~/.bashrc
 echo "alias ramm='python3 /usr/local/opt/ramm/RAMM.py'" >> ~/.zshrc
 echo "alias ramm='python3 /usr/local/opt/ramm/RAMM.py'" >> ~/.config/fish/config.fish
+
+echo "RAMM update script coming soon!"
+exit
